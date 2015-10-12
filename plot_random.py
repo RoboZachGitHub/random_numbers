@@ -10,9 +10,9 @@ def rand_lin_con(length_of_random_sequence):
 	# r1 is supplied rando seed
 	r1 = 10
 	# a and c are supplied constants
-	a = 57; c = 1;
+	a = 9999; c = 32;
 	# m is the number from which to get the modulus
-	m = 256
+	m = 112233
 
 	for i in range(length_of_random_sequence):
 		r2 = (a*r1 + c)%m
