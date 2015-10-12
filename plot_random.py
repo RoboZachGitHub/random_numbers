@@ -22,6 +22,11 @@ def rand_lin_con(length_of_random_sequence):
 	return sqnc
 
 
+
+def name_figure():
+	fig_title = raw_input("Type figure title withou extension, will be saves as *.pdf: ")
+	return fig_title
+
 sequence = rand_lin_con(300)
 
 
@@ -36,6 +41,8 @@ for i in range(0,len(sequence),2):
 
 # make plot
 plt.plot(x_points, y_points, marker='.', linestyle='None')
+fig_title = name_figure()
+plt.savefig(fig_title)
 plt.show()
 
 
@@ -50,6 +57,8 @@ for i in range(0,len(sequence)):
 
 # make plot
 plt.plot(x_points2, y_points2, marker='+')
+fig_title = name_figure()
+plt.savefig(fig_title)
 plt.show()
 
 
