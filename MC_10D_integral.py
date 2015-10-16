@@ -18,28 +18,9 @@ def summation_tenD(number_samples):
 	return integral_eval
 
 
-
-
-
 N = 100000 #number of MC samples
 integral_tenD = summation_tenD(N)
 
 print integral_tenD
 
-#integral_summation = float(0.0)
-#for i in range(0,N):
-	# b is upper integrand range a i lower integrand range
-#	a = 0
-#	b = 1
-#	x_i = random.uniform(a,b)
-#	summation += func(x_i)
-
-#MC_integral = summation/float(N)
-#analytic_integral = float(int_x_sqr(0,1))
-
-
-
-
-#print "MC Integral is: %f" % MC_integral
-#print "Analytical Integral is: %f" % analytic_integral
 
